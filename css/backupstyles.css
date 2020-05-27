@@ -1,0 +1,138 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*font-family:'Muli', sans-serif;*/
+    font-family: 'Caveat', cursive;
+    background-image: linear-gradient(white 30%, rgb(136, 133, 133));
+}
+
+.about-info {
+    font-size: 22px;
+}
+.jumbotron {
+    background-color: rgb(255, 255, 255);
+    max-height: 100%; 
+}
+
+a {
+    color: black;
+}
+
+.vid-con {
+    max-width: 800px;
+    padding-top: 25px;
+}
+
+.sigLine {
+    text-align: right;
+    padding-right: 25px;
+    
+}
+
+.fixedNav {
+    position: absolute; 
+    justify-content: right;
+    width: 96%;
+}
+
+.img {
+    width: 800px;
+    height: 500px;
+}
+
+.imgPrev {
+    height: 200px;
+    max-width: 300px;
+}
+
+.img-caption {
+    font-family: 'Muli', sans-serif;
+    color: white;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+.navBtn {
+    margin-left: 70%;
+    
+}
+
+.content {
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+   
+.content div {
+    position: absolute;
+    top: 60%;
+    bottom: 0;
+    background: black;
+    color: white;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+}
+   
+.content:hover {
+    cursor: pointer;
+}
+   
+.content:hover div {
+    max-width: relative;
+    padding: 15px 15px;
+    visibility: visible;
+    opacity: 0.7; 
+}
+
+.modal {
+    position: fixed;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+.modal-header {
+    border-bottom: 0 none;
+}
+
+.modal-footer {
+    border-top: 0 none;
+}
+
+.modal-content {
+    background-color: transparent;
+    border: 0 none;
+}
+
+.modal-close {
+    color: white;
+}
+  
+.li {
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+}
+
+.imgPrev:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

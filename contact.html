@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat&family=Marck+Script&display=swap">    
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+
+    <title>Mu&#241oz Motions</title>
+
+</head>
+
+<body>
+<!-- Overlay nav start-->
+<div id="nav" class="overlay" onclick="closeNav()">
+    <div class="overlay-content">
+        <a class="li" href="index.html" name="home">Home</a>
+        <a class="li" href="/about.html" name="about">About</a>
+        <a class="li" href="/gallery.html" name="gallery">Gallery</a>
+        <a class="li" href="/events.html" name="events">Events</a>
+        <a class="li" href="/contact.html" name="contact">Contact</a>
+    </div>
+</div>
+<!-- Overlay nav end-->
+    
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <div class="row">
+                <div>
+                    <nav>
+                        <a href="/index.html"><img class="img-fluid logo" src="/imgs/MMlogo.PNG"/></a>
+                    </nav>
+                </div>
+                <div class="col mr-auto pt-4">
+                    <h2>Mu&#241oz Motions</h2>
+                    <h5>Contact</h5> 
+                </div>
+                <div class="col-1 pt-4">
+                    <button type="button" class="fa fa-bars btn navBtn"  onclick="this.blur(), openNav()"></button>   
+                </div>         
+            </div>
+        </div>
+    </div>
+
+    <div class="container card eventCard p-2 intro">
+        <div class="row">
+            <div class="col-12 contact-info">
+                <h3>Mu&#241oz Motions</h3>
+                <h4>Seattle, WA</h4>
+                    <div class="info-links pb-2">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-inverse fa-2x fa-facebook-square"></i></a>
+                        <a href="https://twitter.com/explore" target="_blank"><i class="fa fa-inverse fa-2x fa-twitter-square"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fa fa-2x fa-inverse fa-linkedin-square"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fa fa-2x fa-inverse fa-instagram"></i></a>
+                        <br>
+                        <a href="mailto:dm@munozmotions.com" class="emailAdd">dm@munozmotions.com</a>
+                    </div>
+            </div>
+        </div>
+        
+           <div class="row justify-content-center">
+                <div class="col-4 p-4 card donate-card">
+                    <h3>Donations</h3>
+                    <h5>Did you know?</h5>
+                    <p>The dance arts are primarily funded through grants, performance admission, and donations?
+                        Support your local arts and make a donation today.
+                    </p>
+                    <a href="https://paypal.com" target="_blank"><i class="fa fa-2x fa-inverse fa-cc-paypal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    </div>
+
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/25613dc117.js"></script>
+        <script src="js/toggle.js"></script>           
+                   
+</body>
+</html>

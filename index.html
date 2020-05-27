@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat&family=Marck+Script&display=swap">      
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+
+    <title>Mu&#241oz Motions</title>
+
+</head>
+
+<body>
+<!-- Overlay nav start-->
+<div id="nav" class="overlay" onclick="closeNav()">
+    <div class="overlay-content">
+        <a class="nav-link" href="index.html" name="home">Home</a>
+        <a class="nav-link" href="/about.html" name="about">About</a>
+        <a class="nav-link" href="/gallery.html" name="gallery">Gallery</a>
+        <a class="nav-link" href="/events.html" name="events">Events</a>
+        <a class="nav-link" href="/contact.html" name="contact">Contact</a>
+    </div>
+</div>
+<!-- Overlay nav end-->
+<div class="jumbotron">
+    <div class="container-fluid">
+        <div class="row">
+            <div>
+                <img class="img-fluid logo" src="/imgs/MMlogo.PNG" href="#"/>
+            </div>
+            <div class="col mr-auto pt-4 logoText">
+                <h2>Mu&#241oz Motions</h2>
+            </div>
+            <div class="col-1 pt-4">
+                <button type="button" class="fa fa-bars btn navBtn"  onclick="this.blur(), openNav()"></button>    
+            </div>        
+        </div>
+    </div>
+</div>
+
+        <div class="container vid-con">
+            <div>
+                <div class="embed-responsive embed-responsive-16by9 intro">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rmQ_8KyXQpc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <h4 class="sigLine">- Mu&#241oz Motions</h4>
+        </div>
+        
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>      
+        <script src="https://use.fontawesome.com/25613dc117.js"></script>
+        <script src="js/toggle.js"></script>
+           
+                   
+</body>
+</html>

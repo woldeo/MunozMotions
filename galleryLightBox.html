@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;1,300&display=swap" >
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Marck+Script&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <link rel="stylesheet" href="css/styles.css"/>
+  
+
+    <title>Mu&#241oz Motions</title>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <div class="row">
+                <div>
+                    <nav>
+                        <a href="/index.html"><img class="img-fluid logo" src="/imgs/MMlogo.PNG"/></a>
+                    </nav>
+                </div>
+                <div class="col mr-auto pt-4">
+                    <h2>Mu&#241oz Motions</h2>
+                </div>   
+                <div class="col-1 pt-4">
+                    <a class="btn btn-sm navBtn" data-toggle="collapse" data-target="#pages" onclick="this.blur()"><h2>Move</h2></a>    
+                </div>    
+            </div>
+            
+            <nav class="navbar collapse sticky-bottom fixedNav" id="pages">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a class="nav-link click li" href="/index.html" name="home">Home</a></li> 
+                    <li class="list-inline-item"><a class="nav-link click li" href="/about.html" name="about">About</a></li>
+                    <li class="list-inline-item"><a class="nav-link click li" href="#" name="gallery">Gallery</a></li>
+                    <li class="list-inline-item"><a class="nav-link click li" href="/events.html" name="events">Events</a></li>
+                    <li class="list-inline-item"><a class="nav-link click li" href="/contact.html" name="contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </div>
+
+    <div class="container vid-con">
+        <div class="row">
+            <div class="col-5 embed-responsive embed embed-responsive-4by3">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Awf45u6zrP0" allowfullscreen></iframe>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-5 embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/t6guz6WxI9Q" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col" id="gallery1" data-toggle="lightbox" data-target="#modal1">
+                <div class="content">
+                    <img class="imgPrev img-thumbnail" data-target="#carousel1" data-slide-to="0" 
+                    src="https://images.unsplash.com/photo-1498100152307-ce63fd6c5424?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80">    
+                    <div class="text">
+                        <p>Want to see more cute ass cats? Of course you do. Click right meow.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" id="gallery2" data-toggle="lightbox" data-target="#modal2">
+                <div class="content">
+                    <img class="imgPrev img-thumbnail" data-target="#carousel2" data-slide-to="0" 
+                    src="https://images-na.ssl-images-amazon.com/images/I/71JNnjBypTL._AC_SX522_.jpg"> 
+                    <div class="text">
+                        <p>Wait, what? Even more cute cat pics? I can't even.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" id="gallery3" data-toggle="lightbox" data-target="#modal3">
+                <div class="content">
+                    <img class="imgPrev img-thumbnail" data-target="#carousel3" data-slide-to="0" 
+                    src="https://d17fnq9dkz9hgj.cloudfront.net/uploads/2018/03/Russian-Blue_01.jpg">
+                    <div class="text">
+                        <p>This is getting out of hand. Seriously, I'm dying.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <div data-toggle="lightbox" data-gallery="hidden-images" data-title="hidden item 1"
+      data-remote="https://images.unsplash.com/photo-1498100152307-ce63fd6c5424?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80">
+      </div>
+      <div data-toggle="lightbox" data-gallery="hidden-images" data-title="hidden item 2"
+      data-remote="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+    </div>
+
+
+
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script> 
+    <script src="/js/lightbox.js"></script>   
+      
+                   
+</body>
+</html>

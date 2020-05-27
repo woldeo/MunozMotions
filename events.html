@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap"> 
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Marck+Script&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+
+    <title>Mu&#241oz Motions</title>
+
+</head>
+
+<body>
+<!-- Overlay nav start -->
+<div id="nav" class="overlay" onclick="closeNav()">
+    <div class="overlay-content">
+        <a class="li" href="index.html" name="home">Home</a>
+        <a class="li" href="/about.html" name="about">About</a>
+        <a class="li" href="/gallery.html" name="gallery">Gallery</a>
+        <a class="li" href="/events.html" name="events">Events</a>
+        <a class="li" href="/contact.html" name="contact">Contact</a>
+    </div>
+</div>
+<!-- Overlay nav end -->
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <div class="row">
+                <div>
+                    <nav>
+                        <a href="/index.html"><img class="img-fluid logo" src="/imgs/MMlogo.PNG"/></a>
+                    </nav>
+                </div>
+                <div class="col mr-auto pt-4">
+                    <h2>Mu&#241oz Motions</h2> 
+                    <h5>Events</h5>    
+                </div> 
+                <div class="col-1 pt-4">
+                    <button type="button" class="fa fa-bars btn navBtn"  onclick="this.blur(), openNav()"></button>
+                </div>        
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-sm-6 pb-2">
+                <h3>Current Project</h3>
+                <div class="card eventCard p-3 intro">
+                    <p class="m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam vero modi quas vitae error harum! 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptas temporibus facilis facere nisi eius tenetur minus distinctio assumenda iste. 
+                    </p>
+                </div>
+                <h3>Upcoming Events</h3>
+                <div class="card eventCard p-4 intro">
+                    <div class="row">
+                        <div class="col-sm-9 ml-2 p-1">
+                            <h6>- Modern Cats Round 1 @<a href="https://spectrumdance.org/" target="_blank"> Shake Your Booty Place</a></h6>
+                        </div>
+                        <div class="col">
+                            <a class="btn btn-sm ticketBtn rounded-pill" href="https://www.brownpapertickets.com/browse.html" target="_blank">Tickets</a>
+                        </div>
+                        <div class="col-sm-9 ml-2 p-1">
+                            <h6>- Modern Cats Round 2 @<a href="http://velocitydancecenter.org/" target="_blank"> Shake Your Face Place</a></h6>
+                        </div>
+                        <div class="col">
+                            <a class="btn btn-sm ticketBtn rounded-pill" href="https://www.brownpapertickets.com/browse.html" target="_blank">Tickets</a>
+                        </div>
+                    </div>         
+                </div>
+            </div>
+            
+            <div class="col-sm-6">
+                <div class="container pt-4">
+                    <div class="carousel slide carousel-fade gal-vid rounded intro" id="project-carousel" data-ride="carousel">
+                        <div class="carousel-inner danceCat vid-prev">
+                            <div class="carousel-item active">
+                                <img class="img-fluid" src="https://i.kym-cdn.com/photos/images/original/001/000/072/6cd.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid" src="https://static.boredpanda.com/blog/wp-content/uploads/2018/11/funny-dancing-cats-11-5be421492f1ca__700.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid" src="https://static.boredpanda.com/blog/wp-content/uploads/2018/11/funny-dancing-cats-17-5be4246f5e16f__700.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid" src="https://i.forfun.com/jjjrbdl6.jpeg">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid" src="https://interlude-cdn-blob-prod.azureedge.net/interlude-blob-storage-prod/2018/09/dancing-cat.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid" src="https://i.pinimg.com/originals/77/12/a3/7712a3e1c365f06077a854f3252dba5a.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid" src="https://i.imgflip.com/1r86cg.jpg">
+                            </div>
+                            <a class="carousel-control-prev" href="#project-carousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="carousel-control-next" href="#project-carousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/25613dc117.js"></script>
+        <script src="js/toggle.js"></script>           
+                   
+</body>
+</html>
